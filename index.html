@@ -12,21 +12,22 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
             background: #ffffff;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            color: #37352f;
         }
 
         .container {
-            background: #f8f9fa;
-            border-radius: 25px;
+            background: #ffffff;
+            border-radius: 12px;
             padding: 40px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e9ecef;
+            box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+            border: 1px solid #e3e2e0;
             max-width: 500px;
             width: 100%;
         }
@@ -37,13 +38,14 @@
         }
 
         h1 {
-            color: #333;
+            color: #37352f;
             font-size: 2.5rem;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .subtitle {
-            color: #666;
+            color: #787774;
             font-size: 1.1rem;
         }
 
@@ -59,8 +61,8 @@
 
         .input-group label {
             display: block;
-            color: #333;
-            font-weight: 600;
+            color: #37352f;
+            font-weight: 500;
             margin-bottom: 8px;
             font-size: 1.1rem;
         }
@@ -68,100 +70,101 @@
         .input-field {
             width: 100%;
             padding: 15px 20px;
-            border: 2px solid #dee2e6;
-            border-radius: 15px;
+            border: 1px solid #e3e2e0;
+            border-radius: 8px;
             background: #ffffff;
-            color: #333;
+            color: #37352f;
             font-size: 1.2rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
+            font-weight: 400;
+            transition: all 0.2s ease;
         }
 
         .input-field:focus {
             outline: none;
-            border-color: #007bff;
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+            border-color: #2e75cc;
+            box-shadow: 0 0 0 3px rgba(46, 117, 204, 0.1);
         }
 
         .input-field::placeholder {
-            color: #6c757d;
+            color: #9b9a97;
         }
 
         .result {
-            background: #e9ecef;
-            border-radius: 15px;
+            background: #f7f6f3;
+            border-radius: 8px;
             padding: 20px;
             text-align: center;
-            border: 1px solid #dee2e6;
+            border: 1px solid #e3e2e0;
             margin-top: 10px;
         }
 
         .result-value {
             font-size: 2rem;
-            font-weight: bold;
-            color: #333;
+            font-weight: 600;
+            color: #37352f;
             margin-bottom: 5px;
         }
 
         .result-label {
-            color: #666;
+            color: #787774;
             font-size: 1rem;
         }
 
         .conversion-info {
-            background: #f8f9fa;
-            border-radius: 15px;
+            background: #f7f6f3;
+            border-radius: 8px;
             padding: 20px;
             margin-top: 25px;
-            border: 1px solid #e9ecef;
+            border: 1px solid #e3e2e0;
         }
 
         .conversion-info h3 {
-            color: #333;
+            color: #37352f;
             margin-bottom: 15px;
             font-size: 1.3rem;
+            font-weight: 600;
         }
 
         .conversion-info p {
-            color: #666;
+            color: #787774;
             line-height: 1.6;
             margin-bottom: 10px;
         }
 
         .formula {
-            background: #e9ecef;
-            border-radius: 10px;
+            background: #ffffff;
+            border-radius: 6px;
             padding: 15px;
             margin-top: 15px;
             text-align: center;
-            border: 1px solid #dee2e6;
+            border: 1px solid #e3e2e0;
         }
 
         .formula-text {
-            color: #333;
-            font-family: 'Courier New', monospace;
+            color: #37352f;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
             font-size: 1.1rem;
-            font-weight: bold;
+            font-weight: 500;
         }
 
         .clear-btn {
-            background: #007bff;
+            background: #37352f;
             color: white;
-            border: 2px solid #007bff;
+            border: 1px solid #37352f;
             padding: 12px 25px;
-            border-radius: 25px;
+            border-radius: 6px;
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             margin-top: 15px;
             width: 100%;
         }
 
         .clear-btn:hover {
-            background: #0056b3;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background: #2e2d29;
+            transform: translateY(-1px);
+            box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
         }
 
         @media (max-width: 600px) {
@@ -184,7 +187,7 @@
         }
 
         .error {
-            color: #dc3545;
+            color: #e03e3e;
             font-size: 0.9rem;
             margin-top: 5px;
             display: none;
@@ -229,7 +232,7 @@
                 <div class="formula-text">Yards = Meters × 1.09361</div>
             </div>
             
-            <p style="margin-top: 15px; font-size: 0.9rem; color: #6c757d;">
+            <p style="margin-top: 15px; font-size: 0.9rem; color: #9b9a97;">
                 💡 <strong>Quick Tip:</strong> For rough estimates, you can multiply meters by 1.1 to get yards.
             </p>
         </div>
